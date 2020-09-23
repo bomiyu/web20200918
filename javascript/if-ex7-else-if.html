@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="rpsGage(3)"><i class="fas fa-hand-rock"></i></button>
+    <button onclick="rpsGage(2)"><i class="fas fa-hand-paper"></i></button>
+    <button onclick="rpsGage(1)"><i class="fas fa-hand-scissors"></i></button> 
+
+<br>
+
+<img src="" alt="" id="com"> 
+<p id="result"></p> <!--하나의 결과로 출력하도록-->
+
+
+    <script>
+function myfunc(a) {
+
+}
+
+myfunc(3);
+
+        function rpsGage(user) {   // 분의 1의 확률로 , // 위의 버튼에서 버튼 누를때마다 user값에 입력됨
+            console.log(user);
+
+            var computer = Math.floor(Math.random() * 3) + 1;   // 1 2 3 중에 하나의 값
+            var fileName = "rps" + computer + ".png";
+            //1: 가위 2: 보 3: 바위
+
+            document.getElementById("com").src = fileName;
+
+            var result;
+            if (computer == user) {
+                result = "비겼습니다.";
+            } else if (computer == 1 && user == 3) {
+                result = "이겼습니다.";
+            } else if (computer == 2 && user == 1) {
+                result = "이겼습니다.";
+            } else if (computer == 3 && user == 2){
+                result = "이겼습니다.";
+            } else {
+                result = "졌습니다.";
+            }
+ 
+            document.getElementById("result").innerHTML = result;
+
+            
+        }
+    </script>
+</body>
+</html>

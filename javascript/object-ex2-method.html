@@ -7,9 +7,12 @@
     </style>
 </head>
 <body>
+    <input type="text" id="input1">
+    <p id="para1"> </p>
+
     <script>
         function show() {
-            // console.log("인풋요소의 값을 p요소에 출력");
+        console.log("인풋요소의 값을 p요소에 출력");
             var txt = document.getElementById("input1").value;
             document.getElementById("para1").innerHTML = txt;
         }
