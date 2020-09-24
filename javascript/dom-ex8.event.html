@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello');" id="head1">Lorem ipsum dolor sit amet.</h1>
+    <h1 onclick="show()" id="head2">lorem4</h1>
+    <h1 id="head3">Lorem ipsum dolor sit.</h1>
+    <h1 id="head4">Lorem, ipsum.</h1>
+  <script>
+      var h4 = document.getElementById("head4");
+      h4.addEventListener("click", show);  //show()라고 하면 함수가 실행된 결과가 나오게되므로 그냥 show씀
+
+      var h3 = document.getElementById("head3");
+      h3.onclick = show; //3번째 엘리먼트 선택 시 실행됨
+
+        function show() {
+            for (var i=0; i<3; i++){
+                console.log(i);
+            }
+        }
+
+
+    </script>
+</body>
+</html>

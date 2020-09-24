@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="number" id="input1">
+    <button onclick="show()">구구단</button>
+    <p>
+        Lorem, ipsum &nbsp; dolor.<!--&nbsp;는 entity 구글에 html entity검색해서 찾아쓰면됨 (dev.w3.org)--> 
+    </p>
+    <div id="result">
+
+
+    </div>
+    <script>
+
+        function show() { 
+            var num = document.getElementById("input1").value;
+            num = Number(num);
+            var txt =""; //빈 스트링
+
+            for (var i=1; i<=9; i++) {
+            txt += num + "&times;" + i + " = " + (num * i) + "<br>";//&times;는 곱하기
+        //괄호가 제일먼저 연산됨 
+            }
+
+
+            document.getElementById("result").innerHTML = txt;
+        }
+
+
+
+    </script>
+</body>
+</html>

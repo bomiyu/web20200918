@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js">
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <!--h1*5#head$>lorem5--> 
+    <h1 id="head1">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="head2">Nam necessitatibus sequi eveniet maiores!</h1>
+    <h1 id="head3">Nihil ipsum velit quidem quo.</h1>
+    <h1 id="head4">Animi porro aspernatur sunt dignissimos?</h1>
+    <h1 id="head5">Voluptas saepe accusantium ullam delectus.</h1>
+    <script>
+        var head1 = document.getElementById("head1"); 
+        //id통해가져올땐 중복안됨 하나 가져오는 단수형 그러므로 태그명으로 가져오면 여러엘리먼트 가져올수있음
+        var heads = document.getElementsByTagName("h1"); //배열함수 사용하면됨
+        console.log(heads.length);
+
+        for (var i = 0; i < heads.length; i++){
+            console.log(heads[i].innerHTML);
+
+        }
+    </script>
+</body>
+</html>

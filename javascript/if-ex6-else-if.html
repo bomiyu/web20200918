@@ -12,11 +12,11 @@
     <p id="result"></p>
     <script>
         function show() {
-            var score = document.getElementById("score").value;
+        var score = document.getElementById("score").value;
             score = Number(score);
-            var txt;
+        var txt;
 
-            if ( score >= 90 ) {
+               if ( score >= 90 ) {
                 txt = "A등급입니다.";
             } else if( score >= 80 ) {
                 txt = "B등급입니다.";
@@ -25,6 +25,7 @@
             } else {
                 txt="D등급입니다.";
             }
+            
             
 
             document.getElementById("result").innerHTML = txt; //여러가지 statment가 실행될수가있음 그러므로 위의 변수 선언
