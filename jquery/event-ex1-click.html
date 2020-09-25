@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello');" id="head1">Lorem.</h1>
+    <h1 id="head2">Lorem, ipsum.</h1>
+    <h3 id="head3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam molestiae reiciendis vel facere error ad odit nobis sequi! Quaerat non corporis culpa obcaecati explicabo, ipsum sed reiciendis maiores repudiandae ullam!</h3>
+    <h4 id="head4">Lorem, ipsum.</h4>
+    <script>
+        function myFunc(){
+            console.log('my function');
+        }
+
+        var afunc = function () {
+            console.log("이름없는 함수"); //이름없는함수에 var값 사용가능
+
+        }
+        $("#head4").click(
+            function() { 
+                console.log("이름없는 함수2222222");
+            } ); // head3과 같은 결과를 가짐 -함수가 파라미터에 들어감
+        $("#head3").click(afunc);// var변수 넣어준것
+        $("#head1").click(); // head2 id가진곳에 click이벤트 발생 
+        $("#head2").click(myFunc); //발생했을때함수실행!! 실행됨 코드들을 파라미터로 함수를 가질수 있음
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--table>tr*5>td*6>lorem1    5행6열의 table생성-->
+    <table>
+        <tr>
+            <td>Lorem.</td>
+            <td>Obcaecati!</td>
+            <td>Nobis.</td>
+            <td>Commodi!</td>
+            <td>Incidunt.</td>
+            <td>Ullam?</td>
+        </tr>
+        <tr>
+            <td>Quas.</td>
+            <td>Quia.</td>
+            <td>Debitis!</td>
+            <td>Id.</td>
+            <td>Ea.</td>
+            <td>Optio.</td>
+        </tr>
+        <tr>
+            <td>Pariatur.</td>
+            <td>Odit?</td>
+            <td>Est.</td>
+            <td>Aliquam.</td>
+            <td>Inventore.</td>
+            <td>Voluptatum.</td>
+        </tr>
+        <tr>
+            <td>Libero.</td>
+            <td>Omnis?</td>
+            <td>Assumenda.</td>
+            <td>Animi.</td>
+            <td>Rerum.</td>
+            <td>Numquam.</td>
+        </tr>
+        <tr>
+            <td>Nobis!</td>
+            <td>Ad.</td>
+            <td>Nobis.</td>
+            <td>Accusamus.</td>
+            <td>Mollitia!</td>
+            <td>Cumque.</td>
+        </tr>
+    </table>
+    <script>
+        //$(tr:odd).hide(); //홀수번째만 사라짐 (0부터시작) :odd는 사용하지않기를 권장함
+       $("tr:nth-child(2n+1)").hide();// 1을 쓰면 누군가의 첫번째 자식만 n이라는 키워드를 같이쓰면 2 4 6번째가 선택된다 
+                                    // 2n+1 이되면 n은 0부터시작 
+
+    </script>
+</body>
+</html>
