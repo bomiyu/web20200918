@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#head1").click(function(){
+                console.log("head1 click");
+            });
+//click메소드를 실행했을때함수실행,  변경할필요없을때 쓰면됨 , 아래와 결과는 같음
+
+            $("#head2").on("click",function(){ //이벤트명을 가지고 함수실행, 이벤트 변경필요할때 씀 on만 빼고 적으면됨 (ex onclick중에 on만뺀것)
+
+                console.log("head2 click");
+            });
+
+            $("head3").on({
+                click: function(){
+                    console.log("head3 click");
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 id="head2">Eius, unde repellat.</h1>
+    <h1 id="head3">Quasi, dicta beatae?</h1>
+    <h1 id="head4">Ipsa, vitae animi.</h1>
+    <h1 id="head5">Ipsum, iste eligendi?</h1>
+</body>
+</html>
