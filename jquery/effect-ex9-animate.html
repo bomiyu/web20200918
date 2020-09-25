@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .mydiv {
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $(".mydiv").click(function() {
+                $(this).animate({
+                    width: "700px",
+                    height: "500px",
+                    fontSize: "30px",
+                    left: "100px",
+                    
+                }, 3000);
+                //클릭이벤트받은 이벤트가 값을 쌍으로 넣어주면됨 넓이,높이,폰트사이즈(-기호는 산술로 인식되므로 뒤에 이어지는 단어는 대문자),left_이동효과
+                //3000 3초동안~  
+                //+= 써서 상대적인 크기로 줄수도 있음
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="mydiv">Lorem ipsum dolor sit.</div>
+</body>
+</html>
