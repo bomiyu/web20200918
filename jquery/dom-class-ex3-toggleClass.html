@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click( function() { //눌렀을때 발생하게 만듬 
+               $("div").toggleClass("dark"); // dark라는 클래스가 추가됬다 삭제됫다 추가됬다 삭제됫다 
+        });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1"> <i class="fas fa-adjust"></i></button><!--i.fas.fa-adjust-->
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident earum accusantium commodi facilis corporis, quia eius quas aperiam reiciendis temporibus, iusto rem recusandae voluptatum nobis eos qui sunt sed esse?</div>
+</body>
+</html> 

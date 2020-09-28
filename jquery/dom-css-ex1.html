@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div {
+            background-color: teal;
+
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            var bc = $("#div1").css("background-color");// 값을 선언 
+            console.log(bc);//값을 찍어주는값
+
+            $("#div1").css("color","blue");
+            $("#div1").css({
+                fontSize: "20px",
+                fontWeight: "bold",
+                textDecoration: "underline"
+            }); //프로퍼티 명:값 을 넣어줌!
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat impedit est suscipit modi consectetur reiciendis atque odit non? Earum perspiciatis quod laudantium, sequi eaque totam accusamus unde qui officiis?</div>
+</body>
+</html>
