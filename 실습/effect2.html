@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .main {
+            width: 200px;
+            height: 70px;
+            line-height: 70px;
+            font-size: border-box;
+            background-color: black;
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+        .sub {
+            position: absolute;
+            width: 200px;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 5px solid black;
+            left: 0px;
+            top: 70px;
+            display: none;
+            color: black;
+        }  
+        .main2 {
+            width: 200px;
+            height: 70px;
+            line-height: 70px;
+            font-size: border-box;
+            background-color: black;
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+        .sub2 {
+            position: relative;
+            width: 200px;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 5px solid paleturquoise;
+            left: 0px;
+            top: 70px;
+            display: none;
+            color: black;
+        }  
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".main").click(function(){
+                $(".sub").slideToggle();
+                
+            });
+        });
+        $(document).ready(function(){
+            $(".main2").click(function(){
+                $(".sub2").slideToggle();
+                
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="main">
+        밥메뉴 <i class="fas fa-caret-down"></i>
+        <div class="sub">
+            <div class="sub-items">김치볶음밥</div>
+            <div class="sub-items">참치덮밥</div>
+            <div class="sub-items">제육덮밥</div>
+        </div>
+
+
+    </div>
+    <div class="main2">
+        밀메뉴 <i class="fas fa-caret-down"></i>
+        <div class="sub2">
+            <div class="sub-items">떡볶이</div>
+            <div class="sub-items">라볶이</div>
+            <div class="sub-items">칼국수</div>
+        </div>
+
+
+    </div>
+</body>
+</html>

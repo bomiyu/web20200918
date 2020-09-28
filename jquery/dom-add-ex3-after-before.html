@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#div1").before("hello"); //<div id="div1">Lorem 엘리먼트 직전에 넣는게 before
+            $("#div1").after("world"); //sit.</div> 엘리먼트 다음에넣는게 after //div는 block엘리먼트니까 console의 로그확인 시 다음줄에 배치됨
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem ipsum dolor sit.</div>
+</body>
+</html>
