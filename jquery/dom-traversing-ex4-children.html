@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("div").children().css("border", "5px solid green");
+            $("div").children(".note").css("color", "yellow");
+            $("div>.note").css("background", "black"); //자식을 찾는것 
+
+
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p class="note"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quod suscipit commodi repellat illum numquam ea ut neque quas hic, quis alias vero odit labore sint omnis sunt. Hic, non.</span></p>
+    </div>
+    <div>
+        <p class="note"><span>Quis commodi autem perferendis eaque nihil fugiat error illo repudiandae accusantium id asperiores accusamus, aut maiores ullam, tempora nisi cupiditate. Magni sint quaerat, asperiores quisquam quo omnis suscipit impedit aliquam?</span></p>
+    </div>
+    <div>
+        <p><span>Aut quaerat ab aliquam ipsam accusantium deserunt excepturi fugit alias deleniti consequuntur. Eius tempore quidem, laboriosam incidunt vel libero doloremque ullam sapiente optio itaque, ipsa excepturi. Nam minus veniam corrupti.</span></p>
+    </div>
+</body>
+</html>

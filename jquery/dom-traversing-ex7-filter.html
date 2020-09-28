@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("div").first().css("border", "5px solid green");
+            $("div").last().css("border","5px solid blue");
+            $("div").eq(0).css("padding", "5px"); //첫째 div
+            $("div").eq(1).css("padding","7px");
+            $("div").eq(2).css("padding","9px")
+            $("div").eq(3).css("padding","11px")
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam ducimus non optio minus nam dolor tempora eius accusamus voluptatem! Dolorem qui provident eius omnis aliquid ullam, veniam delectus maxime!</div>
+        </div>
+    </div>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam facere nobis fugit tenetur, impedit laborum deleniti, asperiores facilis reiciendis quo quod eum exercitationem unde iusto quos nemo? Debitis, eum. Laborum.</div>
+</body>
+</html>
